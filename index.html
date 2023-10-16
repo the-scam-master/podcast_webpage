@@ -18,6 +18,8 @@
       font-size: 16px;
       line-height: 1.5;
       color: #333;
+      margin: 0; /* Remove default margin */
+      padding: 0; /* Remove default padding */
     }
 
     body, html {
@@ -42,10 +44,6 @@
       text-decoration: none;
       margin: 0 10px;
       font-weight: bold;
-      transition: color 0.3s; /* Add transition for smooth color change */
-    }
-    header nav a:hover {
-      color: #C8102E; /* Change the text color on hover */
     }
 
     /* Hero Section styles */
@@ -112,6 +110,7 @@
       font-weight: bold;
       letter-spacing: 2px;
       color: #333;
+      text-decoration: underline #fd5c63;
     }
 
     .listen-icons {
@@ -206,6 +205,7 @@
       color : #000000;
       font-weight: bold;
       letter-spacing: 2px;
+      text-decoration: underline #fd5c63;
     }
 
     .social-media-icons {
@@ -223,10 +223,6 @@
 
     /* Adjust the padding and margin for smaller screens */
     @media (max-width: 480px) {
-      body {
-        padding: 10px;
-      }
-
       .hero {
         padding: 10px;
       }
@@ -245,23 +241,49 @@
     }
 
     /* Media Queries */
-
+    /* Extra small devices (phones, 600px and down) */
     @media (max-width: 600px) {
-      /* Extra small devices (phones, 600px and down) */
+      header, footer {
+        padding: 20px; /* Adjust padding for smaller screens */
+      }
+
       .hero {
+        padding: 20px 5px 0; /* Reduce top padding to 10px */
         flex-direction: column;
         text-align: center;
       }
 
+      .hero h1 {
+        font-size: 40px; /* Decrease font size for smaller screens */
+        margin-top: 10px; /* Add some top margin to separate it from the logo */
+        padding: 0 10px; /* Increase padding to expand the width */
+      }
+
       .podcast-logo {
         max-width: 200px;
-        margin-bottom: 20px;
+        margin-bottom: 5px;
+      }
+
+      .hero p {
+        margin-top: 5px; /* Add some top margin to separate it from the logo */
       }
 
       .hero-text {
         order: 1;
       }
-    }
+
+      .listen h2 {
+        font-size: 25px;
+      }
+
+      .episodes h2{
+        font-size: 30px;
+      }
+
+      .social-media h2 {
+        font-size: 25px;
+      }
+   }
 
     @media (min-width: 600px) and (max-width: 991px) {
       /* Small and medium devices (portrait tablets and large phones, 600px to 991px) */
@@ -344,6 +366,7 @@
       .listen-icons img {
         height: 100px;
         width: 100px;
+        margin-top: 10px;
       }
     }
 
@@ -367,11 +390,11 @@
     }
 
     .nav-left {
-      margin-left: 20px;
+      margin-left: 10px;
     }
 
     .nav-right {
-      margin-right: 20px;
+      margin-right: 10px;
     }
   </style>
 </head>
@@ -397,8 +420,8 @@
     <div class="hero-text">
       <h1>The Scam Master</h1>
       <p class="small-description">The podcast that exposes the tricks and traps of fraudsters and teaches you how to outwit them.</p>
-      <p class="desktop-description">Yaar, The Scam Master podcast is all about how to turn the game around and scam the scammers back. We'll give you inside information on frauds and tricks so you can save yourself from getting conned. Listen in as we reveal all the secrets of these cheaters, break down their shady tactics, and make you smart enough to outplay them. We'll help you notice suspicious red flags, keep your personal details fully safe, and stay ahead in this digital jungle. Tune in to become a pro in catching scams and protecting yourself in this non-stop online world. Knowledge is power against these crooks!</p>
-      <a href="#" class="listen-button">Listen Now</a>
+      <p class="desktop-description">The Scam Master podcast is all about how to turn the game around and scam the scammers back. We'll give you inside information on frauds and tricks so you can save yourself from getting conned. Listen in as we reveal all the secrets of these cheaters, break down their shady tactics, and make you smart enough to outplay them. We'll help you notice suspicious red flags, keep your personal details fully safe, and stay ahead in this digital jungle. Tune in to become a pro in catching scams and protecting yourself in this non-stop online world. Knowledge is power against these crooks!</p>
+      <a href="https://podcasters.spotify.com/pod/show/thescammaster" class="listen-button">Listen Now</a>
     </div>
   </section>
 
