@@ -147,13 +147,13 @@ header nav a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
   margin-top: 30px;
 }
 
 .episode-card {
   background-color: #1C1C1C; /* Dark gray for episode cards */
-  padding: 20px;
+  padding: 16px;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   transition: transform 0.2s, background-color 0.2s;
@@ -179,7 +179,7 @@ header nav a {
 
 .episode-card a {
   display: inline-block;
-  margin-top: 15px;
+  margin-top: 10px;
   color: #C8102E; /* Bright red for links */
   text-decoration: none;
   font-weight: bold;
@@ -246,7 +246,7 @@ header nav a {
 /* Extra small devices (phones, 600px and down) */
 @media (max-width: 600px) {
   header, footer {
-    padding: 20px; /* Adjust padding for smaller screens */
+    padding: 15px; /* Adjust padding for smaller screens */
   }
 
   .hero {
@@ -277,8 +277,8 @@ header nav a {
   }
 
   .listen-icons img {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     margin-top: 20px;
     margin-bottom: 20px;
   }
@@ -297,8 +297,8 @@ header nav a {
     margin-top: 10px;
   }
   .social-media-icons img {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
   }
 }
 
@@ -394,7 +394,7 @@ header nav a {
 
 /* Footer styles */
 footer {
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   background-color: #212325;
   color: #FFFFFF;
