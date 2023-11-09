@@ -52,6 +52,7 @@ header nav a {
   display: flex;
   align-items: center;
   padding: 50px;
+  margin-top: 0px; /* Add margin to the top */
 }
 
 .podcast-logo {
@@ -284,17 +285,20 @@ header nav a {
   }
 
   .listen h2 {
-    font-size: 25px;
+    font-size: 22px;
     margin-top: 15px;
+    font-weight: bold;
   }
 
   .episodes h2{
-    font-size: 30px;
+    font-size: 22px;
+    font-weight: bold;
   }
 
   .social-media h2 {
-    font-size: 25px;
+    font-size: 22px;
     margin-top: 10px;
+    font-weight: bold;
   }
   .social-media-icons img {
     height: 40px;
@@ -416,4 +420,78 @@ footer a {
 
 .nav-right {
   margin-right: 10px;
+}
+
+
+/* CSS for styling the Listen to Your Favorite Platform section */
+.listen h2 {
+  font-size: 28px; /* Reduce font size for the section heading */
+  color: #FFFFFF;
+  font-weight: bold;
+  text-decoration: underline var(--underline-color);
+  margin-bottom: 25px;
+}
+
+.platforms-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px; /* Add margin between icons */
+}
+
+.platform {
+  text-align: center;
+  background-color: var(--card-background);
+  border-radius: 10px;
+  padding: 10px; /* Reduce padding for each platform */
+  transition: transform 0.2s, background-color 0.2s;
+  min-width: 100px; /* Reduce the minimum width for each platform card */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  max-width: 100px; /* Reduce the max-width to make icons smaller */
+}
+
+.platform:hover {
+  transform: scale(1.05);
+  background-color: var(--card-hover-background);
+}
+
+.platform img {
+  max-width: 30px; /* Reduce the size of icons */
+  margin-bottom: 5px; /* Reduce margin below icons */
+}
+
+.platform a {
+  display: block;
+  font-size: 14px; /* Reduce the font size of platform names */
+  color: #F6E7D8;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 5px; /* Reduce margin above platform names */
+  transition: color 0.2s;
+}
+
+.platform a:hover {
+  color: #EBE3D5;
+}
+
+@media (max-width: 600px) {
+  .platform {
+    width: calc(25% - 10px); /* To fit 4 cards in a row, considering the margin */
+    margin: 15px; /* Add margin around each icon */
+    }
+   .listen h2 {
+     font-size: 22px;
+   }
+}
+
+
+@media (min-width: 1200px) {
+  .platform {
+    width: calc(25% - 10px); /* To fit 4 cards in a row, considering the margin */
+    margin: 10px; /* Add margin around each icon */
+  }
 }
